@@ -71,6 +71,7 @@
     <Content Include="package.json" />
     <Content Include="src\app\app.component.html" />
     <Content Include="src\app\employee\employee.component.html" />
+    <Content Include="src\app\employee\employee.componet.css" />
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
     <None Include="Web.Debug.config">

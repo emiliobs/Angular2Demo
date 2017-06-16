@@ -10,13 +10,19 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         this.pageHeader = "Employee Details ";
+        this.imagePath = 'https://www.google.es/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
+        this.firstName = 'Emilio';
+        this.lastName = 'Barrera';
     }
+    AppComponent.prototype.GetFullName = function () {
+        return this.firstName + ' ' + this.lastName;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n             <div>\n                <h1>{{pageHeader}}</h1>\n                <my-employee></my-employee>\n             </div>                         \n "
+        template: "\n             <div>\n                <h1>{{GetFullName()}}</h1>\n                <img src='{{imagePath}}'/>\n                <my-employee></my-employee>\n             </div>                         \n "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
